@@ -1,9 +1,9 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-# Copilot Instructions for Spelling Bud Legal Documents Site
+# Copilot Instructions for SpellingBud Legal Documents Site
 
 ## Project Overview
-This is a static GitHub Pages site for hosting legal documents related to the Spelling Bud application. It uses vanilla HTML, CSS, and JavaScript with no external dependencies.
+This is a static GitHub Pages site for hosting legal documents related to the SpellingBud application. It uses vanilla HTML, CSS, and JavaScript with no external dependencies.
 
 ## Code Style Guidelines
 
