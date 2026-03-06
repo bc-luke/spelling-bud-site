@@ -22,172 +22,158 @@
 
     <main class="document-page">
         <a href="../index.html" class="back-link">← Back to Documents</a>
-        
+
         <div class="document-header">
             <h1>COPPA Compliance Statement</h1>
             <div class="document-meta">
-                <p>Effective Date: June 20, 2025</p>
-                <p>Last Updated: June 20, 2025</p>
+                <p>Effective Date: March 6, 2026</p>
+                <p>Last Updated: March 6, 2026</p>
             </div>
         </div>
 
         <div class="document-content">
             <h2>Our Commitment to Children's Privacy</h2>
-            <p>SpellingBud is committed to protecting the privacy of children under 13 years of age. We comply with the Children's Online Privacy Protection Act (COPPA) and have implemented specific measures to ensure children's safety while using our educational app.</p>
+            <p>SpellingBud is committed to protecting the privacy of children under 13 years of age. We comply with the Children's Online Privacy Protection Act (COPPA) and have implemented specific measures to ensure children's safety while using our educational spelling application.</p>
 
-            <h2>COPPA Compliance Measures</h2>
-            <h3>Age Verification</h3>
+            <h2>Age Verification</h2>
             <ul>
-                <li><strong>Mandatory Age Screen:</strong> All users must verify their age before accessing the app</li>
+                <li><strong>Mandatory Age Screen:</strong> All users must select their age group before accessing the app</li>
                 <li><strong>Clear Age Ranges:</strong> Users select "Under 13" or "13 years or older"</li>
-                <li><strong>One-Time Verification:</strong> Age verification is required only once and stored locally</li>
+                <li><strong>One-Time Verification:</strong> Age verification is required only once and stored locally on the device</li>
+                <li><strong>Conservative Default:</strong> If age verification status is unclear, the app defaults to child-safe settings</li>
             </ul>
 
-            <h3>Data Collection from Children Under 13</h3>
-            <h4>Information We DO Collect:</h4>
+            <h2>How Under-13 Accounts Work</h2>
+            <p>SpellingBud is designed for parents or guardians to create and manage accounts on behalf of children under 13. When the app identifies a user as under 13:</p>
             <ul>
-                <li><strong>Age Range Only:</strong> Whether the user is under 13 or 13+ (no specific birth dates)</li>
-                <li><strong>Learning Progress:</strong> Spelling practice progress stored locally on the device</li>
-                <li><strong>App Usage:</strong> Basic functionality usage for app improvement (anonymized)</li>
+                <li><strong>Parent Sign-In:</strong> A parent or guardian is prompted to sign in using their own Google account or email address — not the child's</li>
+                <li><strong>Child Profiles:</strong> The parent creates one or more child profiles within their account. Each profile has a display name (e.g. "Emma") and an avatar chosen by the parent</li>
+                <li><strong>No Child Credentials:</strong> The child does not have their own login credentials; the parent account is the owner</li>
             </ul>
 
-            <h4>Information We DO NOT Collect:</h4>
+            <h2>Data Collected for Children Under 13</h2>
+            <h3>Information We Collect</h3>
             <ul>
-                <li><strong>No Personal Identifiers:</strong> Names, email addresses, phone numbers, or addresses</li>
-                <li><strong>No Photos or Videos:</strong> No camera or media access</li>
-                <li><strong>No Location Data:</strong> No GPS or location tracking</li>
-                <li><strong>No Social Information:</strong> No social media integration or sharing</li>
-                <li><strong>No Behavioral Profiling:</strong> No tracking of browsing habits or interests outside the app</li>
+                <li><strong>Age Range:</strong> Whether the user is under 13 or 13+ (stored as a flag; no exact birthdate collected)</li>
+                <li><strong>Profile Display Name:</strong> A name for the child's profile, set by the parent (e.g. a first name or nickname)</li>
+                <li><strong>Avatar Selection:</strong> A numbered avatar choice selected by the parent</li>
+                <li><strong>Learning Progress:</strong> Spelling practice data including words studied, attempt records, accuracy, time spent per word, and spaced-repetition intervals</li>
+                <li><strong>Achievements &amp; Statistics:</strong> Practice streaks, total words learned, and achievement unlocks</li>
+            </ul>
+            <p>When a parent-managed account is signed in, this data is synced to our secure cloud backend (Supabase) to allow progress to be preserved across devices and app reinstalls.</p>
+
+            <h3>Information We Do Not Collect</h3>
+            <ul>
+                <li><strong>No Child Email Address:</strong> The child's own email address is never requested or stored</li>
+                <li><strong>No Exact Age or Birthdate:</strong> Only the under-13 / 13+ classification is stored</li>
+                <li><strong>No Location Data:</strong> No GPS or location tracking of any kind</li>
+                <li><strong>No Photos, Camera, or Microphone:</strong> The app does not request access to the camera or microphone</li>
+                <li><strong>No Social Information:</strong> No social media integration, chat, or sharing features</li>
+                <li><strong>No Behavioural Profiling:</strong> No tracking of activity outside the SpellingBud app</li>
+            </ul>
+
+            <h2>Advertising and Children Under 13</h2>
+            <ul>
+                <li><strong>Child-Directed Treatment:</strong> When the app identifies an under-13 user, Google AdMob is configured with child-directed treatment enabled, which limits ad targeting and disables personalised advertising in compliance with COPPA</li>
+                <li><strong>Family-Safe Ads Only:</strong> Only age-appropriate, family-friendly advertisements are shown</li>
+                <li><strong>No Behavioural Targeting:</strong> Ads are not based on the child's personal information or in-app behaviour</li>
+                <li><strong>Premium Option:</strong> Parents can remove all ads by subscribing to SpellingBud Premium</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <h3>Supabase (Cloud Backend)</h3>
+            <ul>
+                <li>SpellingBud uses Supabase to store and sync user data securely in the cloud</li>
+                <li>For parent-managed under-13 accounts, learning progress and profile data are stored on Supabase servers</li>
+                <li>All data is transmitted over encrypted HTTPS connections</li>
+                <li>Supabase privacy information: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></li>
+            </ul>
+
+            <h3>Google AdMob (Advertising)</h3>
+            <ul>
+                <li>We use Google AdMob to display advertisements to free-tier users</li>
+                <li>AdMob is configured with child-directed treatment for under-13 users, limiting data collection in line with COPPA requirements</li>
+                <li>Google's privacy practices: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            </ul>
+
+            <h3>Google Play Services (Billing)</h3>
+            <ul>
+                <li>Premium subscriptions are processed through Google Play</li>
+                <li>SpellingBud does not store or process payment information directly</li>
+                <li>Any premium purchases require parental approval through device family settings</li>
+            </ul>
+
+            <h2>Data Security</h2>
+            <ul>
+                <li><strong>Encryption in Transit:</strong> All data sent between the app and our servers is encrypted using HTTPS/TLS</li>
+                <li><strong>Secure Cloud Storage:</strong> Data stored on Supabase is protected by industry-standard security controls</li>
+                <li><strong>Local Storage:</strong> On-device data is stored in a private app database not accessible to other apps</li>
+                <li><strong>No Unauthenticated Access:</strong> Cloud data is only accessible to authenticated parent accounts</li>
             </ul>
 
             <h2>Parental Rights Under COPPA</h2>
-            <p>Parents have the right to:</p>
+            <p>Parents and guardians have the right to:</p>
             <ul>
-                <li><strong>Review Information:</strong> Request to see any information we have collected about their child</li>
-                <li><strong>Delete Information:</strong> Request deletion of their child's information</li>
-                <li><strong>Refuse Collection:</strong> Refuse to allow further collection of their child's information</li>
-                <li><strong>Control Disclosure:</strong> Control whether their child's information is disclosed to third parties</li>
+                <li><strong>Review Information:</strong> Request to see the information we hold about their child</li>
+                <li><strong>Delete Information:</strong> Request complete deletion of their child's account and all associated data</li>
+                <li><strong>Refuse Further Collection:</strong> Request that we stop collecting data and delete existing data</li>
+                <li><strong>Control Disclosure:</strong> Request information about how their child's data has been shared</li>
             </ul>
 
             <h2>How to Exercise Parental Rights</h2>
-            <p><strong>Contact Information:</strong></p>
+            <h3>In-App Account Deletion</h3>
+            <p>The fastest way to delete all data is in the app itself:</p>
+            <ol>
+                <li>Open SpellingBud and go to <strong>Settings</strong></li>
+                <li>Scroll to <strong>Danger Zone</strong> and tap <strong>Delete Account &amp; Data</strong></li>
+                <li>Confirm deletion — all cloud and local data is permanently removed immediately</li>
+            </ol>
+            <p>See our full <a href="delete-account.html">account deletion guide</a> for more detail.</p>
+
+            <h3>Email Request</h3>
             <ul>
-                <li><strong>Email:</strong> spellingbud@googlegroups.com</li>
-                <li><strong>Subject Line:</strong> "COPPA Parental Rights Request"</li>
+                <li><strong>Email:</strong> <a href="mailto:spellingbud@googlegroups.com">spellingbud@googlegroups.com</a></li>
+                <li><strong>Subject Line:</strong> COPPA Parental Rights Request</li>
                 <li><strong>Response Time:</strong> Within 48 hours</li>
             </ul>
-
-            <p><strong>Required Information for Requests:</strong></p>
-            <ul>
-                <li>Parent/guardian name and contact information</li>
-                <li>Child's age range (as entered in the app)</li>
-                <li>Specific request (review, delete, or refuse collection)</li>
-                <li>Verification of parental status may be required</li>
-            </ul>
-
-            <h2>Third-Party Services and Children</h2>
-            <h3>Google AdMob (Advertising)</h3>
-            <ul>
-                <li><strong>Child-Safe Ads:</strong> Only family-friendly, educational advertisements shown to children</li>
-                <li><strong>No Behavioral Targeting:</strong> Ads are not based on child's personal information or behavior</li>
-                <li><strong>COPPA-Compliant:</strong> AdMob is configured for child-directed treatment</li>
-                <li><strong>Limited Data:</strong> Only basic device information for ad delivery (no personal data)</li>
-            </ul>
-
-            <h3>Google Play Services</h3>
-            <ul>
-                <li><strong>No Direct Interaction:</strong> Children do not interact directly with Google Play services</li>
-                <li><strong>Parent-Controlled:</strong> Any premium purchases require parental approval through device settings</li>
-                <li><strong>Secure Processing:</strong> Payment information is handled by Google Play, not our app</li>
-            </ul>
-
-            <h2>Data Security for Children</h2>
-            <h3>Local Storage Only</h3>
-            <ul>
-                <li><strong>Device-Based:</strong> All child learning data stored locally on the device</li>
-                <li><strong>No Cloud Sync:</strong> Children's learning progress is not uploaded to external servers</li>
-                <li><strong>Secure Storage:</strong> Data encrypted using Android's built-in security measures</li>
-            </ul>
-
-            <h3>No Data Transmission</h3>
-            <ul>
-                <li><strong>Age Information:</strong> Never transmitted outside the device</li>
-                <li><strong>Learning Progress:</strong> Stays on the local device only</li>
-                <li><strong>No Analytics:</strong> No personal analytics data sent for children under 13</li>
-            </ul>
+            <p><strong>Please include:</strong> your name and relationship to the child, the email address used to create the account, and the specific action you are requesting (review, delete, or refuse further collection).</p>
 
             <h2>Educational Content Safety</h2>
-            <h3>Age-Appropriate Content</h3>
             <ul>
-                <li><strong>Educational Focus:</strong> All content designed for learning and skill development</li>
+                <li><strong>Educational Focus:</strong> All content is designed for spelling practice and skill development</li>
                 <li><strong>Family-Friendly:</strong> No inappropriate language, images, or themes</li>
-                <li><strong>Curriculum-Aligned:</strong> Content based on standard educational spelling curricula</li>
-            </ul>
-
-            <h3>Safe Learning Environment</h3>
-            <ul>
-                <li><strong>No Social Features:</strong> No chat, messaging, or social interaction capabilities</li>
-                <li><strong>No External Links:</strong> No links to external websites or content</li>
-                <li><strong>Offline Capable:</strong> Can be used without internet connection for added safety</li>
+                <li><strong>No Social Features:</strong> No chat, messaging, or social interaction between users</li>
+                <li><strong>No External Links:</strong> The app does not link to external websites from within the learning experience</li>
+                <li><strong>Offline Capable:</strong> Core practice features work without an internet connection</li>
             </ul>
 
             <h2>Compliance Monitoring</h2>
-            <h3>Regular Reviews</h3>
             <ul>
-                <li><strong>Privacy Audits:</strong> Regular review of data practices</li>
-                <li><strong>Content Review:</strong> Ongoing evaluation of educational content appropriateness</li>
-                <li><strong>Third-Party Assessment:</strong> Periodic COPPA compliance assessments</li>
+                <li><strong>Regular Reviews:</strong> We periodically review our data practices against COPPA requirements</li>
+                <li><strong>Content Review:</strong> Educational content is evaluated for age-appropriateness</li>
+                <li><strong>Third-Party Review:</strong> We review the COPPA compliance status of any third-party SDKs we integrate</li>
             </ul>
 
-            <h3>Staff Training</h3>
-            <ul>
-                <li><strong>Privacy Training:</strong> All staff trained on COPPA requirements</li>
-                <li><strong>Child Safety:</strong> Team educated on children's digital safety best practices</li>
-                <li><strong>Legal Updates:</strong> Regular updates on children's privacy law changes</li>
-            </ul>
-
-            <h2>Contact for COPPA Concerns</h2>
-            <p><strong>Primary Contact:</strong></p>
-            <ul>
-                <li><strong>Email:</strong> spellingbud@googlegroups.com</li>
-            </ul>
-
-            <p><strong>Emergency Contact</strong> (for urgent privacy concerns):</p>
-            <ul>
-                <li><strong>Email:</strong> spellingbud@googlegroups.com</li>
-                <li><strong>Response Time:</strong> Within 24 hours</li>
-            </ul>
-
-            <h2>Safe Harbor Provisions</h2>
-            <p>We rely on the following safe harbor provisions under COPPA:</p>
-            <ul>
-                <li><strong>Educational Purpose:</strong> App is designed solely for educational use</li>
-                <li><strong>Minimal Collection:</strong> We collect only information necessary for the educational service</li>
-                <li><strong>No Disclosure:</strong> We do not disclose children's personal information to third parties</li>
-                <li><strong>Parental Control:</strong> Parents have full control over their child's information</li>
-            </ul>
-
-            <h2>Reporting COPPA Violations</h2>
-            <p>If you believe we have violated COPPA or have concerns about children's privacy:</p>
+            <h2>Reporting COPPA Concerns</h2>
+            <p>If you believe we have violated COPPA or have concerns about a child's privacy:</p>
             <ol>
-                <li><strong>Contact Us First:</strong> Email spellingbud@googlegroups.com with your concerns</li>
-                <li><strong>FTC Reporting:</strong> You may also report concerns to the Federal Trade Commission</li>
+                <li><strong>Contact Us First:</strong> Email <a href="mailto:spellingbud@googlegroups.com">spellingbud@googlegroups.com</a> with your concerns</li>
+                <li><strong>FTC Reporting:</strong> You may also report concerns to the US Federal Trade Commission at <a href="https://reportfraud.ftc.gov" target="_blank">reportfraud.ftc.gov</a></li>
                 <li><strong>State Authorities:</strong> Contact your state's attorney general office if applicable</li>
             </ol>
 
-            <h2>Updates to COPPA Compliance</h2>
+            <h2>Updates to This Statement</h2>
             <p>We will notify parents of any material changes to our COPPA practices through:</p>
             <ul>
-                <li><strong>Email Notification:</strong> Where contact information is available</li>
-                <li><strong>In-App Notice:</strong> Prominent notice within the application</li>
-                <li><strong>Website Update:</strong> Updated information on our privacy policy page</li>
+                <li><strong>In-App Notice:</strong> A prominent notice displayed within the application</li>
+                <li><strong>Website Update:</strong> Updated information on this page with a revised effective date</li>
             </ul>
 
             <p><strong>COPPA Compliance Officer:</strong> Luke Eller, Founder/Developer<br>
-            <strong>Last Reviewed:</strong> June 20, 2025<br>
-            <strong>Next Review:</strong> December 20, 2025</p>
+            <strong>Last Reviewed:</strong> March 6, 2026<br>
+            <strong>Next Review:</strong> September 6, 2026</p>
 
-            <p>This statement demonstrates our commitment to protecting children's privacy and complying with all applicable children's privacy laws.</p>
+            <p>By using SpellingBud, you acknowledge that you have read and understood this COPPA Compliance Statement.</p>
         </div>
     </main>
 
